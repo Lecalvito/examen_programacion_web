@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+.button {
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 150px;
+    transition: transform 0.3s;
+}
+
+.button-purple {
+    background-color: purple;
+}
+
+.button-green {
+    background-color: limegreen;
+}
