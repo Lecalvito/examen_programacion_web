@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h4>Calculo de compras</h4>
+    <form method="POST">
+        <label for="nombre">Ingrese tu nombre </label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br><br>
+        <label for="edad">Ingrese tu edad </label>
+        <input type="text" name="edad" id="edad" required>
+        <br><br>
+        <label for="cantidad">Ingresa la cantidad de tarros de pintura a comparar </label>
+        <input type="text" name="cantidad" id="cantidad" required>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    {% if nombre %}
+    <p>{{ nombre }}</p>
+    <p>{{ valor_total }}</p>
+    <p>{{ valor_descuento }}</p>
+    <p>{{ valor_final }}</p>
+    {% endif %}
+</div>
+</body>
+</html>
